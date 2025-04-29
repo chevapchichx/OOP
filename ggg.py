@@ -145,10 +145,10 @@ if __name__ == "__main__":
     # Тестируем все алгоритмы
     print("O(1):", constant_time_example(numbers))  # Мгновенно
     print("O(n):", sum_array(numbers))  # Быстро
-    print("O(n²):", quadratic_time_example(numbers))  # Медленнее
-    print("O(log n):", logarithmic_time_example(sorted_numbers, 4))  # Быстро
+    print("O(n²):", has_duplicates(numbers))  # Медленнее
+    print("O(log n):", binary_search(sorted_numbers, 4))  # Быстро
     print("O(n log n):", merge_sort(numbers))  # Умеренно
     print("O(2^n):", fibonacci(10))  # Медленно
-    print("O(n!):", len(factorial(4)))  # Очень медленно
+    print("O(n!):", len(get_permutations(4)))  # Очень медленно
     print("Linear search:", linear_search(numbers, 6))  # Линейный поиск
     print("Bubble sort:", bubble_sort(numbers.copy()))  # Сортировка пузырьком
